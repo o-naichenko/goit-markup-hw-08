@@ -1,0 +1,36 @@
+.clients {
+  @extend %section-padding;
+}
+.clients__container {
+  @extend %container;
+}
+.clients__header {
+  @extend %section-header;
+}
+.clients__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: $icon-color;
+  transition: $trans-time;
+
+  &:hover,
+  &link {
+    border-color: $blue-color;
+    color: $blue-color;
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}
