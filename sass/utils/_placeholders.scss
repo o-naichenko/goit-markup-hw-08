@@ -1,4 +1,5 @@
 %block-title {
+  display: block;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -20,7 +21,7 @@
 %container {
   // width: 1200px;
   margin: 0 auto;
-  padding: 16px 15px;
+  padding: 0 15px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -41,12 +42,15 @@
 }
 %section-header {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: $dark-gray-color;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 %section-padding {
   padding: 94px 0;

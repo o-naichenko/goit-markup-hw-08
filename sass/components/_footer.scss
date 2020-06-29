@@ -6,39 +6,42 @@
   background-color: #2f303a;
   color: $white-color;
   padding: 60px 0;
+  text-align: center;
 }
 .footer__container {
   @extend %container;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: baseline;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: baseline;
 }
 /* column-1  */
 .footer__address {
-  display: block;
-  width: 231px;
+  margin-bottom: 60px;
 }
-.logo {
+.footer__address .logo {
   @extend %logo;
+  display: block;
+  margin-bottom: 20px;
   &__studio-white {
     color: $white-color;
   }
 }
 .address {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   font-style: normal;
+  text-align: center;
 }
 .address__location {
-  margin: 10px 0 0 0;
+  display: block;
+  margin: 0 0 8px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .address__link {
-  margin: 9px 0 0 0;
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -46,24 +49,32 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   transition: $trans-time;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
   &:hover,
   &:focus {
     color: $blue-color;
   }
 }
+
 /* присоединяйтесь */
 
 .connect {
   display: block;
-  width: 207px;
+  margin-bottom: 60px;
+  // width: 207px;
 }
 .connect__title,
 .subscribe__title {
   @extend %block-title;
+  margin-bottom: 20px;
 }
 .connect__list {
   display: flex;
-  margin: 20px 0 0 0;
+  justify-content: center;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -88,15 +99,18 @@
 /* подписаться на рассылку */
 
 .subscribe {
-  width: 570px;
+  // width: 570px;
 }
 .subscribe__form {
-  display: flex;
-  margin-top: 20px;
+  // display: flex;
 }
 
 .subscribe__input {
-  width: 358px;
+  display: block;
+  // display: flex;
+  // align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 9px 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -106,23 +120,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   outline: none;
 }
 .subscribe__btn {
   @extend %button;
-
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin-left: 12px;
-  padding: 10px 28px;
+  margin: 0;
+  // padding: 10px 28px;
   width: 200px;
   height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .subscribe__icon {
-  display: block;
+  // display: block;
   margin-left: 10px;
 }

@@ -9,16 +9,22 @@
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  justify-content: space-between;
-  margin: 0;
+  // justify-content: space-between;
+  margin: -15px;
   padding: 0;
+}
+.clients__item {
+  margin: 15px;
+  padding: 0;
+  width: calc((100% - 60px) / 2);
 }
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 175px;
+  margin: 0;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

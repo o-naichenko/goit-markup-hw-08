@@ -112,15 +112,18 @@
         <h2 class="works__header">Чем мы занимаемся</h2>
         <ul class="works__list">
           <li class="works__item">
-            <img src="./images/laptop.jpg" width="370" alt="Ноутбук" />
+            <img srcset="./images/works/Десктопные приложения@x2.jpg x2, ./images/works/Десктопные приложения@x3.jpg x3"
+              src="./images/laptop.jpg" width="370" alt="Ноутбук" />
             <h3 class="works__title">Десктопные приложения</h3>
           </li>
           <li class="works__item">
-            <img src="./images/smartphone.jpg" width="370" alt="Смартфон" />
+            <img srcset="./images/works/Мобильные приложения@x2.jpg x2, ./images/works/Мобильные приложения@x3.jpg x3"
+              src="./images/smartphone.jpg" width="370" alt="Смартфон" />
             <h3 class="works__title">Мобильные приложения</h3>
           </li>
           <li class="works__item">
-            <img src="./images/monitor.jpg" width="370" alt="Пример дизайна на экране" />
+            <img srcset="./images/works/Дизайнерские решения@x2.jpg x2, ./images/works/Дизайнерские решения@x3.jpg x3"
+              src="./images/monitor.jpg" width="370" alt="Пример дизайна на экране" />
             <h3 class="works__title">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -130,10 +133,11 @@
     <section class="team">
       <div class="team__container">
         <h2 class="team__header">Наша команда</h2>
-        <ul class="team__list" lang="en">
+        <ul class="team__list">
           <!-- Николай Кучеренко -->
           <li class="team__item">
-            <img src="./images/John_Smith.jpg" width="270" height="260" alt="John Smith" />
+            <img srcset="./images/team/1@2x.jpg x2, ./images/team/1@3x.jpg x3" src="./images/team/1.jpg"
+              alt="Николай Кучеренко" />
             <h3 class="team__name">Николай Кучеренко</h3>
             <p class="team__profession">Product Designer</p>
             <!-- Cсылки на соц сети -->
@@ -164,7 +168,8 @@
           </li>
           <!-- Ольга Иванова -->
           <li class="team__item">
-            <img src="./images/Marta_Stewart.jpg" width="270" height="260" alt="Marta Stewart" />
+            <img srcset="./images/team/2@2x.jpg x2, ./images/team/2@3x.jpg x3" src="./images/team/2.jpg"
+              alt="Marta Stewart" />
             <h3 class="team__name">Ольга Иванова</h3>
             <p class="team__profession">Frontend Developer</p>
             <!-- Cсылки на соц сети -->
@@ -195,7 +200,8 @@
           </li>
           <!-- Андрей Шевченко -->
           <li class="team__item">
-            <img src="./images/Robert_Jakis.jpg" width="270" height="260" alt="Robert Jakis" />
+            <img srcset="./images/team/3@2x.jpg x2, ./images/team/3@3x.jpg x3" src="./images/team/3.jpg"
+              alt="Robert Jakis" />
             <h3 class="team__name">Андрей Шевченко</h3>
             <p class="team__profession">Marketing</p>
             <!-- Ссылки на соцсети -->
@@ -226,7 +232,8 @@
           </li>
           <!-- Иван Николаев -->
           <li class="team__item">
-            <img src="./images/Martin_Doe.jpg" width="270" height="260" alt="Martin Doe" />
+            <img srcset="./images/team/4@2x.jpg x2, ./images/team/4@3x.jpg x3" src="./images/team/4.jpg"
+              alt="Martin Doe" />
             <h3 class="team__name">Иван Николаев</h3>
             <p class="team__profession">UI Designer</p>
             <!-- Cсылки на соц сети -->
@@ -349,7 +356,7 @@
         <form class="subscribe__form" action="#" method="POST">
           <label for="subscribe-email"></label>
           <input class="subscribe__input" type="email" id="subscribe-email" placeholder="E-mail">
-          <button class="subscribe__btn">Подписаться
+          <button class="subscribe__btn"><span>Подписаться</span>
             <svg class="subscribe__icon" aria-label="icon-send" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon_send"></use>
             </svg>

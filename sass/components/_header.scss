@@ -8,29 +8,30 @@
 }
 .header__container {
   @extend %container;
+  padding: 16px 15px;
   position: relative;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
-  .logo {
-    @extend %logo;
+}
+.header__container .logo {
+  @extend %logo;
 
-    &__studio {
-      color: #000000;
-    }
+  &__studio {
+    color: #000000;
   }
-  .header__mobile-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 60px 0;
-    background-color: $white-color;
-    border-top: 1px solid #ececec;
-    & .is-open {
-      display: block;
-    }
+}
+.header__mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 60px 0;
+  background-color: $white-color;
+  border-top: 1px solid #ececec;
+  &.is-open {
+    display: block;
   }
 }
 .header-nav {

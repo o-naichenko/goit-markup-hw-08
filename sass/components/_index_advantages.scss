@@ -31,6 +31,7 @@
   height: 70px;
 }
 .advantages__title {
+  margin: 0 0 10px 0;
   color: $dark-gray-color;
   font-weight: 700;
   font-size: 14px;
@@ -44,8 +45,7 @@
   }
 }
 .advantages__description {
-  margin: 10px 0 0 0;
-
+  margin: 0;
   color: $gray-color;
   font-weight: 400;
   font-size: 14px;

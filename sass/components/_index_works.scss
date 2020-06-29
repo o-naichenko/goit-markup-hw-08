@@ -1,5 +1,9 @@
 .works {
+  display: none;
   @extend %section-padding;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .works__container {
   @extend %container;
@@ -10,7 +14,7 @@
 .works__list {
   margin: 0;
   padding: 0;
-  display: flex;
+  // display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
