@@ -17,7 +17,13 @@
   <header class="header">
     <div class="header__container">
       <a class="logo" lang="en" href="./index.html">Web <span class="logo__studio">Studio</span></a>
-      <div class="header__mobile-menu">
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+          <use class="icon-cross" href="./images/symbol-defs.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="menu-container" id="menu-container" data-menu>
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -402,6 +408,8 @@
           </label>
           <label class="order-form__conditions">
             <input class="order-form__checkbox" type="checkbox" name="conditions">
+            <!-- <p class="order-form__conditions-title">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="order-form__conditions-link" href="#">Условия
+                договора</a></p> -->
             <span class="order-form__checkbox-custom"></span>
             <span class="order-form__conditions-title">Соглашаюсь с рассылкой и принимаю&nbsp;</span>
             <a class="order-form__conditions-link" href="#">Условия договора</a>
@@ -411,7 +419,7 @@
       </form>
     </div>
   </div>
-  <script>
+  <!-- <script>
     const refs = {
       openModalBtn: document.querySelector('[data-open-modal]'),
       closeModalBtn: document.querySelector('[data-close-modal]'),
@@ -445,7 +453,10 @@
           e.currentTarget.reset();
         });
     })();
-  </script>
+  </script> -->
+  <script src="./js/menu.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
 </body>
 
 </html>

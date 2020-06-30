@@ -41,8 +41,7 @@
   transition: $trans-time;
 }
 %section-header {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
   text-align: center;
   color: $dark-gray-color;
   font-weight: 700;
