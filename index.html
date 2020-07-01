@@ -362,7 +362,7 @@
         <form class="subscribe__form" action="#" method="POST">
           <label for="subscribe-email"></label>
           <input class="subscribe__input" type="email" id="subscribe-email" placeholder="E-mail">
-          <button class="subscribe__btn"><span>Подписаться</span>
+          <button class="subscribe__btn" type="button"><span>Подписаться</span>
             <svg class="subscribe__icon" aria-label="icon-send" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon_send"></use>
             </svg>
@@ -419,41 +419,6 @@
       </form>
     </div>
   </div>
-  <!-- <script>
-    const refs = {
-      openModalBtn: document.querySelector('[data-open-modal]'),
-      closeModalBtn: document.querySelector('[data-close-modal]'),
-      backdrop: document.querySelector('[data-backdrop]'),
-    };
-
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    refs.backdrop.addEventListener('click', logBackdropClick);
-
-    function toggleModal() {
-      refs.backdrop.classList.toggle('is-hidden');
-    }
-
-    function logBackdropClick() {
-      console.log('Это клик в бекдроп');
-    }
-  </script>
-  <script>
-    (() => {
-      document
-        .querySelector('.order-form')
-        .addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`),
-          );
-
-          e.currentTarget.reset();
-        });
-    })();
-  </script> -->
   <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>

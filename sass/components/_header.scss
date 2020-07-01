@@ -54,6 +54,7 @@
 .menu-container {
   position: relative;
   display: flex;
+  z-index: 2;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -91,6 +92,7 @@
 }
 .header-nav__item:not(:last-child) {
   // margin-right: 45px;
+  margin-bottom: 40px;
 }
 .header-nav__link {
   position: relative;
