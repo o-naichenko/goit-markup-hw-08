@@ -1,18 +1,17 @@
 .card-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: -15px;
   padding: 0;
   /* justify-content: space-between; */
   list-style-type: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
 }
 .card {
   padding: 0;
   margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
 }
 .card__link {
   padding: 0;
@@ -50,6 +49,9 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__type {
   margin: 4px 0 0 0;
