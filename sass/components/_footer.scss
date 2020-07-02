@@ -7,6 +7,10 @@
   color: $white-color;
   padding: 60px 0;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer__container {
   @extend %container;
@@ -17,10 +21,17 @@
   @media screen and (max-width: 767px) {
     display: block;
   }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 /* column-1  */
 .footer__address {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .footer__address .logo {
   @extend %logo;
@@ -34,7 +45,6 @@
   // display: flex;
   // flex-direction: column;
   font-style: normal;
-  text-align: center;
 }
 .address__location {
   display: block;
@@ -68,7 +78,6 @@
 .connect {
   display: block;
   margin-bottom: 60px;
-  // width: 207px;
 }
 .connect__title,
 .subscribe__title {
@@ -103,12 +112,11 @@
 /* подписаться на рассылку */
 
 .subscribe {
-  @media screen and (min-width: 768px) {
-    width: 450px;
-  }
 }
 .subscribe__form {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe__input {
@@ -128,9 +136,19 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
   outline: none;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0px;
+    width: 358px;
+  }
 }
 .subscribe__btn {
   @extend %button;
+  padding: 0 28px;
   display: inline-flex;
   align-items: center;
   margin: 0;

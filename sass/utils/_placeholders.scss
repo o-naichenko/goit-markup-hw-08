@@ -29,6 +29,9 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 %form-title {
   display: block;
@@ -39,6 +42,15 @@
   letter-spacing: 0.01em;
   color: $gray-color;
   transition: $trans-time;
+}
+%logo {
+  font-family: raleway;
+  color: $blue-color;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 %section-header {
   margin: 0 auto 30px auto;
@@ -69,15 +81,7 @@
   border: 0;
   border-radius: 50%;
 }
-%logo {
-  font-family: raleway;
-  color: $blue-color;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
+
 %visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -85,11 +89,11 @@
   height: 1px;
   margin: -1px;
 }
-%adaptive-width {
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-}
+// %adaptive-width {
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//   }
+// }

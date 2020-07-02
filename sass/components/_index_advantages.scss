@@ -19,6 +19,9 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
   }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 4);
+  }
 }
 .advantages__icon-box {
   margin-bottom: 30px;
