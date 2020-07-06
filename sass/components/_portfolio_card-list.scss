@@ -37,6 +37,20 @@
   display: flex;
   position: relative;
   overflow: hidden;
+  height: 294px;
+  width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 .card__text {
   padding: 20px 24px;
